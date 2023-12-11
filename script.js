@@ -2,7 +2,7 @@ function calculate() {
     const num1 = document.getElementById('num1').value;
     const num2 = document.getElementById('num2').value;
   
-    fetch('http://localhost:3000/calculate', {
+    fetch('https://calculator-muvp.onrender.com/calculate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ function calculate() {
     const num2 = document.getElementById('num2').value;
   
     // Fetch the PDF when the 'Print PDF' button is clicked
-    fetch('http://localhost:3000/calculate', {
+    fetch('https://calculator-muvp.onrender.com/calculate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
