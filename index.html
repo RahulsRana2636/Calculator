@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+  <form id="calculatorForm">
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1" name="num1" required>
+    <br>
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2" name="num2" required>
+    <br>
+    <button type="button" onclick="calculate()">Calculate</button>
+    <button type="button" onclick="printPdf()">Print PDF</button>
+  </form>
+
+  <div id="result"></div>
+
+  <!-- Add an iframe to display the PDF -->
+  <iframe id="pdfViewer" style="width: 100%; height: 600px; display: none;"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
